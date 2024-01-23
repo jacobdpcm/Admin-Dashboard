@@ -6,3 +6,69 @@ body {
     color: black;
     overflow-y: auto;
 }
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: 8rem 6fr;
+}
+
+.side {
+    grid-area: 1/1/-1/1;
+    background-color: rgb(79, 122, 171);
+    color: white;
+}
+
+.header {
+    grid-area: 1/2/2/3;
+}
+
+.dash {
+    grid-area: 2/2/3/3;
+    background-color: gray;
+}
+
+.side {
+    display: grid;
+    padding-left: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 18rem 7rem;    
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 0 ;
+    align-items: center;
+    font-size: 24pt;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 3rem;
+    align-items: center;
+}
+
+.icon {
+    justify-self: center;
+}
+
+.icon img{
+    height: 20px;
+    width: auto;
+}
+
+.help {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 3rem;
+    align-items: center;
+}
