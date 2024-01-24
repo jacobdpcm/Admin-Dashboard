@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 16rem 1fr;
-    grid-template-rows: 8rem 6fr;
+    grid-template-rows: 10rem 6fr;
 }
 
 .side {
@@ -22,11 +22,12 @@ body {
 
 .header {
     grid-area: 1/2/2/3;
+    
 }
 
 .dash {
     grid-area: 2/2/3/3;
-    background-color: gray;
+    background-color: rgb(154, 170, 226);
 }
 
 .side {
@@ -35,6 +36,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 3rem 18rem 7rem;    
     gap: 3rem;
+    font-weight: 600;
 }
 
 .logo {
@@ -71,4 +73,88 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: 3rem;
     align-items: center;
+}
+
+.headertop {
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 4rem 1rem 2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type='text'] {
+    width: 30rem;
+    height: 1.5rem;
+    background-color: rgb(217, 214, 214);
+    border-radius: 14px;
+    border: none;
+}
+
+.accountoptions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    min-width: 15rem;
+}
+
+.symbol {
+    height: 25px;
+    width: auto;
+}
+
+.avi {
+    height: 40px;
+    width: auto;
+}
+
+.headerbottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 1rem 2rem;
+    box-shadow:  2px 10px 5px rgb(189, 187, 187);
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avi.bigger {
+    height: 60px;
+    width: auto;
+}
+
+.hithere {
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.name {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 125px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: rgb(79, 122, 171);
 }
