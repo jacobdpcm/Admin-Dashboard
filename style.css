@@ -5,6 +5,7 @@ body {
     font-family: Roboto, sans-serif;
     color: black;
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .main {
@@ -22,12 +23,15 @@ body {
 
 .header {
     grid-area: 1/2/2/3;
-    
+    box-shadow:  2px 5px 10px 0px rgb(189, 187, 187);
+    margin-bottom: 5px;
 }
 
 .dash {
     grid-area: 2/2/3/3;
-    background-color: rgb(154, 170, 226);
+    background-color: rgb(122, 146, 231);
+    display: grid;
+    grid-template-columns: 1fr 23rem;
 }
 
 .side {
@@ -119,7 +123,7 @@ input[type='text'] {
     display: flex;
     justify-content: space-between;
     padding: 0 4rem 1rem 2rem;
-    box-shadow:  2px 10px 5px rgb(189, 187, 187);
+    
 }
 
 .greeting {
@@ -158,3 +162,85 @@ button {
     color: white;
     background-color: rgb(79, 122, 171);
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    grid-template-rows: 3rem;
+    grid-auto-rows: 250px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.projectheader {
+    grid-column: 1 / -1;
+    color: white;
+    font-size: 18pt;
+    align-self: end;
+}
+
+.project {
+    background-color: white;
+    height: 200px;
+    width: 380px;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 10px solid green;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 500px;
+    padding: 1rem;
+}
+
+.announcewrapper,
+.personwrapper {
+    display: grid;
+    grid-auto-rows: 8rem;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+}
+
+.announcementsheader,
+.trendingheader {
+    display: grid;
+    color: white;
+    font-size: 18pt;
+    align-items: end;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.bordertop {
+    border-radius: 10px 10px 0 0;
+}
+
+.borderbottom {
+    border-radius: 0 0 10px 10px;
+}
+
+div>.announce {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+p {
+    font-size: 10pt;
+    font-weight: 200;
+    color: gray;
+}
+
+.announce {
+    background-color: white;
+    padding: 2rem;
+    font-size: 10pt;
+}
+
+.person {
+    
+    text-align: center;
+}
+
