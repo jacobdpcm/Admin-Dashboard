@@ -186,6 +186,21 @@ button {
     padding: 1rem;
     border-radius: 8px;
     border-left: 10px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconoptions {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1rem;
+}
+
+.iconoptions img {
+    height: 30px;
+    width: auto;
 }
 
 .feed {
@@ -198,10 +213,17 @@ button {
 .announcewrapper,
 .personwrapper {
     display: grid;
-    grid-auto-rows: 8rem;
     border-radius: 10px;
     background-color: white;
     align-items: center;
+}
+
+.announcewrapper {
+    grid-auto-rows: 8rem; 
+}
+
+.personwrapper {
+    grid-auto-rows: 6rem;
 }
 
 .announcementsheader,
@@ -240,7 +262,26 @@ p {
 }
 
 .person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
     
-    text-align: center;
+}
+
+img[src="./icons/generic profile.png"] {
+    height: 50px;
+    width: auto;
+}
+
+.hover:hover,
+button:hover,
+.iconoptions img:hover {
+    opacity: .7;
+}
+
+.person:hover,
+.announce:hover {
+    background-color: rgb(203, 200, 200);
 }
 
